@@ -35,6 +35,33 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+
+## Features
+
+- Onboarding Flow: Seamless user registration and setup process.
+- Email Password Authentication with Verification: Secure login with email verification. And Also using Google OAuth for easy login using Google credentials.
+- Authorization: Secure access control for different user roles.
+- Home Screen with Live Location & Google Map: Real-time location tracking with markers on a map.
+- Recent Rides: View a list of recent rides at a glance.
+- Google Places Autocomplete: Search any place on Earth with autocomplete suggestions.
+- Find Rides: Search for rides by entering 'From' and 'To' locations.
+- Select Rides from Map: Choose available cars near your location from the map.
+- Confirm Ride with Detailed Information: View complete ride details, including time and fare price.
+- Pay for Ride Using Stripe: Make payments using multiple methods like cards and others.
+- Create Rides After Successful Payment: Book a ride after confirming payment.
+- Profile: Manage account details in the profile screen.
+- History: Review all rides booked so far.
+- Responsive on Android and iOS: Optimized for both Android and iOS devices and many more, including code architecture and reusability
+## Technology 
+- React Native
+- Expo
+- Stripe
+- PostgreSQL
+- Google Maps
+- Zustand
+- Clerk
+- Tailwind CSS
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
@@ -42,33 +69,7 @@ To learn more about developing your project with Expo, look at the following res
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-##	Features
-•	**Onboarding Flow**: Seamless user registration and setup process.
-•	Email Password Authentication with Verification: Secure login with email verification. And Also using Google OAuth for easy login using Google credentials.
-•	Authorization: Secure access control for different user roles.
-•	Home Screen with Live Location & Google Map: Real-time location tracking with markers on a map.
-•	Recent Rides: View a list of recent rides at a glance.
-•	Google Places Autocomplete: Search any place on Earth with autocomplete suggestions.
-•	Find Rides: Search for rides by entering 'From' and 'To' locations.
-•	Select Rides from Map: Choose available cars near your location from the map.
-•	Confirm Ride with Detailed Information: View complete ride details, including time and fare price.
-•	Pay for Ride Using Stripe: Make payments using multiple methods like cards and others.
-•	Create Rides After Successful Payment: Book a ride after confirming payment.
-•	Profile: Manage account details in the profile screen.
-•	History: Review all rides booked so far.
-•	Responsive on Android and iOS: Optimized for both Android and iOS devices.
-•	and many more, including code architecture and reusability
-Technology 
-	React Native
-	Expo
-	Stripe
-	PostgreSQL
-	Google Maps
-	Zustand
-	Clerk
-	Tailwind CSS
-
-Built with React Native for handling the user interface, Google Maps for rendering maps with directions, stripe for handling payments, serverless Postgres for managing databases, and styled with TailwindCSS. RideWithME is a perfect mobile app. 
+ 
 
 
 ## Join the community
