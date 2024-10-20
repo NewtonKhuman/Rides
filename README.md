@@ -62,6 +62,24 @@ This command will move the starter code to the **app-example** directory and cre
 - Clerk
 - Tailwind CSS
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+
+EXPO_PUBLIC_PLACES_API_KEY=
+EXPO_PUBLIC_DIRECTIONS_API_KEY=
+
+DATABASE_URL=
+
+EXPO_PUBLIC_SERVER_URL=ridewithm044@gmail.com
+
+EXPO_PUBLIC_GEOAPIFY_API_KEY=
+
+EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
