@@ -24,8 +24,8 @@ const BookRide = () => {
   return (
     <StripeProvider
       publishableKey={process.env.EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY!}
-      merchantIdentifier="merchant.identifier" // required for Apple Pay
-      urlScheme="your-url-scheme" // required for 3D Secure and bank redirects
+      merchantIdentifier="merchant.identifier"
+      urlScheme="your-url-scheme"
     >
       <RideLayout title="Book Ride">
         <>
@@ -54,6 +54,12 @@ const BookRide = () => {
                   {driverDetails?.rating}
                 </Text>
               </View>
+            </View>
+
+            <View className="flex flex-row items-center justify-center mt-3">
+              <Text className="text-lg font-JakartaRegular">
+                {driverDetails?.car_model} - {driverDetails?.car_number_plate}
+              </Text>
             </View>
           </View>
 
@@ -95,6 +101,7 @@ const BookRide = () => {
               </Text>
             </View>
           </View>
+
           <Payment
             fullName={user?.fullName!}
             email={user?.emailAddresses[0].emailAddress!}

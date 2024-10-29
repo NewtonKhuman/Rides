@@ -8,6 +8,8 @@ declare interface Driver {
   car_image_url: string;
   car_seats: number;
   rating: number;
+  car_model: number;
+  car_number_plate: number;
 }
 
 declare interface MarkerData {
@@ -23,6 +25,8 @@ declare interface MarkerData {
   last_name: string;
   time?: number;
   price?: string;
+  car_model: number;
+  car_number_plate: number;
 }
 
 declare interface MapProps {
@@ -50,7 +54,11 @@ declare interface Ride {
     first_name: string;
     last_name: string;
     car_seats: number;
+    car_model: number;
+    car_number_plate: number;
   };
+  car_model: number;
+  car_number_plate: number;
 }
 
 declare interface ButtonProps extends TouchableOpacityProps {

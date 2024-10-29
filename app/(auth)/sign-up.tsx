@@ -1,4 +1,11 @@
-import { Alert, Image, ScrollView, Text, View } from "react-native";
+import {
+  Alert,
+  ScrollView,
+  Text,
+  ImageBackground,
+  View,
+  Image,
+} from "react-native";
 import { icons, images } from "@/app/constants";
 import InputField from "@/components/InputField";
 import { useState } from "react";
@@ -24,6 +31,7 @@ const SignUp = () => {
     error: "",
     code: "",
   });
+
   const onSignUpPress = async () => {
     if (!isLoaded) {
       return;
@@ -76,21 +84,24 @@ const SignUp = () => {
     } catch (err: any) {
       setVerification({
         ...verification,
-        error: err.erors[0].longMessage,
+        error: err.errors[0].longMessage,
         state: "failed",
       });
     }
   };
+
   return (
     <ScrollView className="flex-1 bg-white">
-      <View className="flex-1 bg-white">
-        <View className="relative w-full h-[250px]">
-          <Image source={images.signUpCar} className="z-0 w-full h-[250px]" />
-          <Text className="text-2xl text-black font-JakartaSemiBold absolute bottom-5 left-5">
+      <View className="flex-1">
+        <ImageBackground
+          source={images.signUpCar}
+          style={{ width: "100%", height: 200 }}
+          resizeMode="cover"
+        ></ImageBackground>
+        <View className="p-5">
+          <Text className="text-2xl text-black font-JakartaSemiBold mb-4">
             Create Your Account
           </Text>
-        </View>
-        <View className="p-5">
           <InputField
             label="Name"
             placeholder="Enter your name"
@@ -118,8 +129,9 @@ const SignUp = () => {
           <CustomButton
             title="Sign Up"
             onPress={onSignUpPress}
-            className="mt-6"
+            className="mt-6 bg-black text-white"
           />
+
           <OAuth />
           <Link
             href="/sign-in"
@@ -191,4 +203,5 @@ const SignUp = () => {
     </ScrollView>
   );
 };
+
 export default SignUp;

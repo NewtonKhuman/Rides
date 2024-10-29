@@ -1,6 +1,5 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-
 import { formatTime } from "@/lib/utils";
 import { DriverCardProps } from "@/types/type";
 import { icons } from "@/app/constants";
@@ -40,7 +39,7 @@ const DriverCard = ({ item, selected, setSelected }: DriverCardProps) => {
           </Text>
 
           <Text className="text-sm font-JakartaRegular text-general-800">
-            {formatTime(parseInt(`${item.time}`) || 40)}`
+            {formatTime(parseInt(`${item.time}`) || 40)}
           </Text>
 
           <Text className="text-sm font-JakartaRegular text-general-800 mx-1">
@@ -49,6 +48,20 @@ const DriverCard = ({ item, selected, setSelected }: DriverCardProps) => {
 
           <Text className="text-sm font-JakartaRegular text-general-800">
             {item.car_seats} seats
+          </Text>
+        </View>
+
+        <View className="flex flex-row items-center justify-start mt-1">
+          <Text className="text-sm font-JakartaRegular text-secondary-900">
+            {item.car_model}
+          </Text>
+
+          <Text className="text-sm font-JakartaRegular text-general-800 mx-2">
+            |
+          </Text>
+
+          <Text className="text-sm font-JakartaRegular text-secondary-900">
+            {item.car_number_plate}
           </Text>
         </View>
       </View>
